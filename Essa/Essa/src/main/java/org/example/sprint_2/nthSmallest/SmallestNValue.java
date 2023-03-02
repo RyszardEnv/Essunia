@@ -1,12 +1,14 @@
 package org.example.sprint_2.nthSmallest;
 
 import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class SmallestNValue {
 
     public int nthSmallest(int[] num, int n) {
         bubbleSort(num);
-        HashSet<Integer> uniqueValues = new HashSet<>();
+        Set<Integer> uniqueValues = new HashSet<>();
         for (int i = 0; i < num.length; i++) {
             uniqueValues.add(num[i]);
         }

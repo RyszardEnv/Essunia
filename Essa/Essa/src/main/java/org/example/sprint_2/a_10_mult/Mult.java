@@ -5,7 +5,7 @@ public class Mult {
         int result = 0;
         int absX = x < 0 ? ~x + 1 : x;
         int absY = y < 0 ? ~y + 1 : y;
-        boolean sign = (x < 0 ^ y < 0);
+        boolean sign = (x < 0 ^ y < 0); //((x < 0 && y > 0) || (x > 0 && y < 0))
 
         int i = 0;
         while (i < absY) {

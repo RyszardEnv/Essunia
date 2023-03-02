@@ -2,12 +2,10 @@ package org.example.sprint_2.a_07_myPI;
 
 public class CountPI {
     public static void main(String[] args) {
-        double v = countPi(100);
+        double v = countPi(1);
         System.out.println(v);
     }
-    //Pi = 4/1 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + ...
-
- public static double countPi(int n) {
+    public static double countPi(int n) {
         int odd = 1;
         double pi = 0.0;
 

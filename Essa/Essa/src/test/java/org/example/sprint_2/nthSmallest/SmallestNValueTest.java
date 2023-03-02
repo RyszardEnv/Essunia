@@ -37,4 +37,16 @@ class SmallestNValueTest {
         //then
         assertEquals(0, result);
     }
+
+    @Test
+    public void shouldWorkWithRepeatingNumbers() {
+        //given
+        SmallestNValue smallestNValue = new SmallestNValue();
+
+        //when
+        int result = smallestNValue.nthSmallest(new int[] {1, 0, 1, 1, 4}, 3);
+
+        //then
+        assertEquals(4, result);
+    }
 }
